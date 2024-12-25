@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink_background"
+    android:padding="24dp">
+
+    <!-- Logo Aplikasi -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_button"/>
+
+    <!-- Judul Aplikasi -->
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/deep_pink"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Field Input Nama Pengguna -->
+    <EditText
+        android:id="@+id/username_input"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/username_hint"
+        android:autofillHints="Username"
+        android:inputType="text"
+        android:textColor="@color/deep_pink"
+        android:textColorHint="@color/pink_light"
+        android:background="@drawable/rounded_input"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_below="@id/app_title"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Field Input Email -->
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/email_hint"
+        android:autofillHints="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/deep_pink"
+        android:textColorHint="@color/pink_light"
+        android:background="@drawable/rounded_input"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_below="@id/username_input"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Field Input Password -->
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/password_hint"
+        android:autofillHints="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/deep_pink"
+        android:textColorHint="@color/pink_light"
+        android:background="@drawable/rounded_input"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_below="@id/email_input"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Tombol Registrasi -->
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/password_input"
+        android:layout_marginBottom="16dp"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_bold"
+        android:background="@drawable/rounded_button" />
+
+    <!-- Teks Divider (Or) -->
+    <TextView
+        android:id="@+id/divider_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or"
+        android:textColor="@color/hot_pink"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/register_button" />
+
+    <!-- Tombol Login (jika sudah punya akun) -->
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/already_have_account_login"
+        android:textColor="@color/hot_pink"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/divider_text" />
+
+</android.widget.RelativeLayout>

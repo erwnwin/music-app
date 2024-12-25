@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink_background"
+    android:padding="24dp">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/logo"
+        android:elevation="8dp"
+        android:background="@drawable/rounded_button" />
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="@string/app_name"
+        android:textColor="@color/deep_pink"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_bold" />
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@id/app_title"
+        android:layout_marginTop="32dp"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/rounded_input"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="@color/deep_pink"
+        android:textColorHint="@color/pink_light"
+        android:elevation="4dp" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@id/email_input"
+        android:layout_marginTop="16dp"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:background="@drawable/rounded_input"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="@color/deep_pink"
+        android:textColorHint="@color/pink_light"
+        android:elevation="4dp" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@id/password_input"
+        android:layout_marginTop="24dp"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_bold"
+        android:background="@drawable/rounded_button"
+        android:elevation="6dp" />
+
+    <!-- Divider Text -->
+    <View
+        android:id="@+id/line_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/login_button"
+        android:layout_marginTop="16dp"
+        android:background="@color/pink_light" />
+
+    <!-- Sign Up Text -->
+    <TextView
+        android:id="@+id/sign_up_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_divider"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/dont_have_account_sign_up"
+        android:textColor="@color/hot_pink"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_black"
+        android:clickable="true"
+        android:focusable="true" />
+
+</RelativeLayout>
